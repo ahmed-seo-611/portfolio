@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أحمد نادي | خبير SEO ومطور WordPress</title>
+<meta name="description" content="أحمد نادي — خبير SEO ومطور WordPress. أبني مواقع احترافية تتصدر نتائج البحث.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+<!-- Language Switcher -->
+<a href="en.html" class="lang-switch" aria-label="Switch to English">
+  <span class="lang-icon">🌐</span>
+  <span class="lang-text">English</span>
+</a>
+
+<!-- Floating Buttons -->
+<button id="darkModeToggle" class="floating-dark-mode" aria-label="Toggle Dark Mode">
+  <i class="fas fa-moon"></i>
+</button>
+<a href="https://wa.me/01017029464" class="floating-wa" target="_blank" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+<a href="mailto:lyfah7@gmail.com" class="floating-mail" aria-label="إيميل"><i class="fas fa-envelope"></i></a>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-particles" id="particles"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text" data-anim="fade-right">
+        <div class="hero-badge">
+          <i class="fas fa-code"></i>
+          <span>SEO Specialist &amp; WordPress Developer</span>
+        </div>
+        <h1>أحمد <span>نادي</span></h1>
+        <p class="hero-tagline">لا تقلق، أنت في المكان الصحيح<br>أبني مواقع احترافية تتصدر نتائج البحث وتحقق نتائج حقيقية</p>
+        <div class="hero-chips">
+          <span class="chip"><i class="fab fa-wordpress"></i> WordPress</span>
+          <span class="chip"><i class="fas fa-search"></i> SEO</span>
+          <span class="chip"><i class="fas fa-paint-brush"></i> UI/UX</span>
+          <span class="chip"><i class="fab fa-html5"></i> HTML &amp; CSS</span>
+        </div>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-red"><i class="fas fa-paper-plane"></i> تواصل معي</a>
+          <a href="#projects" class="btn-outline"><i class="fas fa-briefcase"></i> مشاريعي</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-anim="fade-left">
+        <!-- 3D rotating icons sphere -->
+        <div class="icon-sphere-wrap">
+          <div class="sphere-center">
+            <div class="center-avatar">
+              <img src="avatar.jpeg" alt="أحمد نادي">
+            </div>
+          </div>
+          <div class="icon-sphere" id="iconSphere">
+            <!-- Icons will be injected by JS -->
+          </div>
+        </div>
+        <!-- Floating stat cards -->
+        <div class="hero-badge-card bc1" data-anim="pop">
+          <div class="bc-icon"><i class="fas fa-globe"></i></div>
+          <div class="bc-text"><strong>+77</strong><span>موقع إلكتروني</span></div>
+        </div>
+        <div class="hero-badge-card bc2" data-anim="pop">
+          <div class="bc-icon"><i class="fas fa-hospital"></i></div>
+          <div class="bc-text"><strong>+55</strong><span>موقع طبي</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <i class="fas fa-chevron-down"></i>
+  </div>
+</section>
+
+<!-- ══════════ STATS ══════════ -->
+<section class="stats-section">
+  <div class="stats-grid">
+    <div class="stat-card" data-anim="zoom">
+      <div class="stat-icon-wrap"><i class="fas fa-calendar-check stat-anim-cal"></i></div>
+      <div class="stat-num" data-target="5">0</div>
+      <div class="stat-label">سنوات خبرة</div>
+    </div>
+    <div class="stat-card" data-anim="zoom">
+      <div class="stat-icon-wrap"><i class="fas fa-hospital-alt vi-anim-medical"></i></div>
+      <div class="stat-num" data-target="55">0</div>
+      <div class="stat-label">موقع طبي</div>
+    </div>
+    <div class="stat-card" data-anim="zoom">
+      <div class="stat-icon-wrap"><i class="fas fa-globe stat-anim-globe"></i></div>
+      <div class="stat-num" data-target="77">0</div>
+      <div class="stat-label">موقع إلكتروني</div>
+    </div>
+    <div class="stat-card" data-anim="zoom">
+      <div class="stat-icon-wrap"><i class="fas fa-search vi-anim-search"></i></div>
+      <div class="stat-num" data-target="99">0</div>
+      <div class="stat-label">% SEO Score</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="section-head" data-anim="fade-up">
+      <h2>من أنا</h2>
+      <p>خبير متخصص في بناء حضور رقمي قوي</p>
+    </div>
+    <div class="about-grid">
+      <!-- Visual: 3D skill icons panel -->
+      <div class="about-visual" data-anim="fade-right">
+        <div class="about-3d-panel">
+          <div class="panel-glow"></div>
+          <div class="panel-icons-grid">
+            <div class="panel-icon-card" data-tilt>
+              <i class="fab fa-wordpress"></i>
+              <span>WordPress</span>
+            </div>
+            <div class="panel-icon-card" data-tilt>
+              <i class="fas fa-search"></i>
+              <span>SEO</span>
+            </div>
+            <div class="panel-icon-card" data-tilt>
+              <i class="fab fa-figma"></i>
+              <span>Figma</span>
+            </div>
+            <div class="panel-icon-card" data-tilt>
+              <i class="fab fa-html5"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="panel-icon-card" data-tilt>
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS3</span>
+            </div>
+            <div class="panel-icon-card" data-tilt>
+              <i class="fas fa-mobile-alt"></i>
+              <span>Responsive</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text" data-anim="fade-left">
+        <h2 class="name-title">أحمد نادي<span class="name-line-deco"></span></h2>
+        <p>متخصص في تطوير تجارب رقمية متكاملة — من تصميم المواقع إلى تهيئة محركات البحث (SEO). أمتلك خبرة عملية في إنشاء مواقع احترافية خاصة في المجال الطبي، مع التركيز على تحسين الظهور في نتائج البحث وتحقيق أعلى معدلات التحويل.</p>
+        <p>أجمع بين الإبداع في التصميم والتحليل التقني لبناء مواقع سريعة، متجاوبة، ومتوافقة مع معايير Google الحديثة.</p>
+
+        <!-- Timeline -->
+        <div class="timeline">
+          <div class="tl-item" data-anim="slide-right">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-year">2019</span>
+              <h4>مصمم مواقع</h4>
+              <p>بداية رحلة تصميم المواقع الاحترافية</p>
+            </div>
+          </div>
+          <div class="tl-item" data-anim="slide-right">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-year">2020</span>
+              <h4>مطور WordPress</h4>
+              <p>تطوير مواقع WordPress متقدمة ومخصصة</p>
+            </div>
+          </div>
+          <div class="tl-item" data-anim="slide-right">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-year">2022</span>
+              <h4>خبير YMYL و SEO طبي</h4>
+              <p>التركيز على معايير E-E-A-T وبناء الموثوقية الطبية العالية</p>
+            </div>
+          </div>
+          <div class="tl-item" data-anim="slide-right">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-year">2023</span>
+              <h4>متخصص UI/UX</h4>
+              <p>تصميم تجارب مستخدم متكاملة ومحوّلة</p>
+            </div>
+          </div>
+          <div class="tl-item" data-anim="slide-right">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-year">2024</span>
+              <h4>متخصص GEO</h4>
+              <p>دمج الذكاء الاصطناعي لتصدر عمليات البحث الذكية المستقبلية</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SKILLS ══════════ -->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <div class="section-head" data-anim="fade-up">
+      <h2>المهارات</h2>
+      <p>أدواتي في بناء مواقع ناجحة ومتصدرة</p>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-card" data-anim="pop" data-delay="0">
+        <div class="skill-icon-wrap"><i class="fas fa-palette skill-anim-float"></i></div>
+        <h3>UI/UX Design</h3>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-pct="98"><div class="skill-fill"></div></div>
+          <span class="skill-pct">98%</span>
+        </div>
+      </div>
+
+      <div class="skill-card" data-anim="pop" data-delay="80">
+        <div class="skill-icon-wrap"><i class="fab fa-wordpress skill-anim-float"></i></div>
+        <h3>WordPress Dev</h3>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-pct="90"><div class="skill-fill"></div></div>
+          <span class="skill-pct">90%</span>
+        </div>
+      </div>
+
+      <div class="skill-card" data-anim="pop" data-delay="160">
+        <div class="skill-icon-wrap"><i class="fas fa-search skill-anim-float"></i></div>
+        <h3>SEO</h3>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-pct="100"><div class="skill-fill"></div></div>
+          <span class="skill-pct">99.9%</span>
+        </div>
+      </div>
+
+      <div class="skill-card" data-anim="pop" data-delay="240">
+        <div class="skill-icon-wrap"><i class="fas fa-laptop-code skill-anim-float"></i></div>
+        <h3>Web Design</h3>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-pct="97"><div class="skill-fill"></div></div>
+          <span class="skill-pct">97%</span>
+        </div>
+      </div>
+
+      <div class="skill-card" data-anim="pop" data-delay="320">
+        <div class="skill-icon-wrap"><i class="fab fa-figma skill-anim-float"></i></div>
+        <h3>Figma / Adobe XD</h3>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-pct="90"><div class="skill-fill"></div></div>
+          <span class="skill-pct">90%</span>
+        </div>
+      </div>
+
+      <div class="skill-card" data-anim="pop" data-delay="400">
+        <div class="skill-icon-wrap"><i class="fab fa-html5 skill-anim-float"></i></div>
+        <h3>HTML &amp; CSS</h3>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-pct="100"><div class="skill-fill"></div></div>
+          <span class="skill-pct">99.9%</span>
+        </div>
+      </div>
+
+      <div class="skill-card" data-anim="pop" data-delay="480">
+        <div class="skill-icon-wrap"><i class="fas fa-pencil-alt skill-anim-float"></i></div>
+        <h3>Content Writing</h3>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-pct="95"><div class="skill-fill"></div></div>
+          <span class="skill-pct">95%</span>
+        </div>
+      </div>
+
+      <div class="skill-card" data-anim="pop" data-delay="560">
+        <div class="skill-icon-wrap"><i class="fas fa-camera skill-anim-float"></i></div>
+        <h3>Photography &amp; Video</h3>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-pct="92"><div class="skill-fill"></div></div>
+          <span class="skill-pct">92%</span>
+        </div>
+      </div>
+
+      <div class="skill-card" data-anim="pop" data-delay="640">
+        <div class="skill-icon-wrap"><i class="fas fa-images skill-anim-float"></i></div>
+        <h3>Graphic Design</h3>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" data-pct="90"><div class="skill-fill"></div></div>
+          <span class="skill-pct">90%</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SERVICES ══════════ -->
+<section id="services" class="services-section">
+  <div class="container">
+    <div class="section-head" data-anim="fade-up">
+      <h2>الخدمات</h2>
+      <p>خدمات متكاملة لبناء وتصدر مشاريعك الطبية في محركات البحث</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card" data-anim="pop" data-delay="0">
+        <div class="vi"><i class="fas fa-stethoscope vi-anim-search"></i></div>
+        <h3>تطوير مواقع طبية</h3>
+        <p>تصميم وتطوير مواقع احترافية للعيادات والأطباء باستخدام ووردبريس مع معايير السرعة الفائقة وتجربة مستخدم عالية التحويل.</p>
+      </div>
+      <div class="svc-card" data-anim="pop" data-delay="100">
+        <div class="vi"><i class="fas fa-map-marker-alt skill-anim-float"></i></div>
+        <h3>SEO المحلي للعيادات</h3>
+        <p>تحسين تواجدك في النطاق الجغرافي الخاص بك لجذب المزيد من المرضى من منطقتك المحلية، مع التركيز على نماذج Google My Business.</p>
+      </div>
+      <div class="svc-card" data-anim="pop" data-delay="200">
+        <div class="vi"><i class="fas fa-rocket vi-anim-rocket"></i></div>
+        <h3>تحسين الأداء التقني</h3>
+        <p>التأكد من خلو موقعك من الأخطاء البرمجية وتسريعه ليتوافق مع تحديثات جوجل الأساسية (Core Web Vitals) لتجربة مثالية للمستخدم.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROJECTS ══════════ -->
+<section id="projects" class="projects-section">
+  <div class="container">
+    <div class="section-head" data-anim="fade-up">
+      <h2>مشاريع مميزة</h2>
+      <p>أكثر من 55 موقعاً طبياً و77 موقعاً للخدمات — كل موقع قصة نجاح</p>
+    </div>
+
+    <!-- Project tabs -->
+    <div class="proj-tabs" data-anim="fade-up">
+      <button class="proj-tab active" onclick="switchProj('medical',this)">
+        <i class="fas fa-hospital"></i> المواقع الطبية
+      </button>
+      <button class="proj-tab" onclick="switchProj('services',this)">
+        <i class="fas fa-tools"></i> مواقع الخدمات
+      </button>
+    </div>
+
+    <!-- Medical Projects -->
+    <div id="proj-medical" class="proj-panel active">
+      <div class="projects-grid">
+
+        <div class="proj-card" data-anim="fade-up" data-delay="0">
+          <div class="proj-image-container" style="width: 100%; height: 200px; border-radius: 12px; overflow: hidden; margin-bottom: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);">
+            <img src="images/karim-samir.jpg" alt="أ.د. كريم سمير حلمي" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          </div>
+          <div class="proj-badge">طبي</div>
+          <h3>أ.د. كريم سمير حلمي</h3>
+          <p class="proj-client"><i class="fas fa-user-md"></i> جراحات العظام والمفاصل</p>
+          <p class="proj-desc">دكتوراه واستشاري جراحة العظام والمفاصل الصناعية والمناظير.</p>
+          <div class="proj-tags">
+            <span>Medical SEO</span><span>GEO</span><span>Front-End</span>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; gap:16px;">
+            <a href="https://drkarimsamir.com/" target="_blank" class="proj-link"><i class="fas fa-external-link-alt"></i> زيارة الموقع</a>
+            <a href="story-ortho.html" class="proj-link" style="color:#6b7280;"><i class="fas fa-book-open"></i> قصة العمل</a>
+          </div>
+        </div>
+
+        <div class="proj-card" data-anim="fade-up" data-delay="80">
+          <div class="proj-image-container" style="width: 100%; height: 200px; border-radius: 12px; overflow: hidden; margin-bottom: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);">
+            <img src="images/amr-nagy.png" alt="د. عمرو ناجي" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          </div>
+          <div class="proj-badge">طبي</div>
+          <h3>د. عمرو ناجي</h3>
+          <p class="proj-client"><i class="fas fa-user-md"></i> جراحة عامة وعظام</p>
+          <p class="proj-desc">استشاري جراحة العظام والمناظير. استاذ جراحة العظام والكسور تخصص دقيق مفاصل ومناظير.</p>
+          <div class="proj-tags">
+            <span>SEO Content</span><span>IEO</span><span>UI/UX</span>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; gap:16px;">
+            <a href="https://dramrnagy.com/" target="_blank" class="proj-link"><i class="fas fa-external-link-alt"></i> زيارة الموقع</a>
+          </div>
+        </div>
+
+        <div class="proj-card" data-anim="fade-up" data-delay="160">
+          <div class="proj-image-container" style="width: 100%; height: 200px; border-radius: 12px; overflow: hidden; margin-bottom: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);">
+            <img src="images/ashraf-soliman.png" alt="ا.د اشرف حسن سليمان" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          </div>
+          <div class="proj-badge">طبي</div>
+          <h3>ا.د. أشرف حسن سليمان</h3>
+          <p class="proj-client"><i class="fas fa-user-md"></i> طب العيون</p>
+          <p class="proj-desc">استشاري واستاذ طب وجراحة العيون، استشاري جراحات القرنية والمياه البيضاء وتصحيح النظر.</p>
+          <div class="proj-tags">
+            <span>Medical Content</span><span>GEO</span><span>Front-End</span>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; gap:16px;">
+            <a href="https://drashrafsoliman.com/" target="_blank" class="proj-link"><i class="fas fa-external-link-alt"></i> زيارة الموقع</a>
+          </div>
+        </div>
+
+        <div class="proj-card" data-anim="fade-up" data-delay="240">
+          <div class="proj-image-container" style="width: 100%; height: 200px; border-radius: 12px; overflow: hidden; margin-bottom: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);">
+            <img src="images/amr-emam.png" alt="د. عمرو امام" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          </div>
+          <div class="proj-badge">طبي</div>
+          <h3>د. عمرو إمام</h3>
+          <p class="proj-client"><i class="fas fa-user-md"></i> أمراض القلب</p>
+          <p class="proj-desc">استشاري قلب معتمد دولياً. القلب والقسطرة والأوعية الدموية بمعهد القلب القومي - القاهرة.</p>
+          <div class="proj-tags">
+            <span>SEO Strategy</span><span>IEO</span><span>Front-End</span>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; gap:16px;">
+            <a href="https://cardiofitclinic.com/" target="_blank" class="proj-link"><i class="fas fa-external-link-alt"></i> زيارة الموقع</a>
+          </div>
+        </div>
+
+        <div class="proj-card" data-anim="fade-up" data-delay="320">
+          <div class="proj-image-container" style="width: 100%; height: 200px; border-radius: 12px; overflow: hidden; margin-bottom: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);">
+            <img src="images/mohamed-elsenity.png" alt="د. محمد عبد الفتاح السنيطي" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          </div>
+          <div class="proj-badge">طبي</div>
+          <h3>د. محمد عبدالفتاح السنيطي</h3>
+          <p class="proj-client"><i class="fas fa-user-md"></i> نساء وتوليد وحقن مجهري</p>
+          <p class="proj-desc">استشاري أمراض النساء. أستاذ بكلية الطب، مدير الفئة بدار الشفاء ومستشار حقن مجهري.</p>
+          <div class="proj-tags">
+            <span>Medical SEO</span><span>GEO</span><span>Front-End</span>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; gap:16px;">
+            <a href="https://drelsenity.com/" target="_blank" class="proj-link"><i class="fas fa-external-link-alt"></i> زيارة الموقع</a>
+            <a href="story-obgyn.html" class="proj-link" style="color:#6b7280;"><i class="fas fa-book-open"></i> قصة العمل</a>
+          </div>
+        </div>
+
+        <div class="proj-card" data-anim="fade-up" data-delay="400">
+          <div class="proj-image-container" style="width: 100%; height: 200px; border-radius: 12px; overflow: hidden; margin-bottom: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);">
+            <img src="images/mohamed-nabil.png" alt="د. محمد نبيل عطية" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          </div>
+          <div class="proj-badge">طبي</div>
+          <h3>د. محمد نبيل عطية</h3>
+          <p class="proj-client"><i class="fas fa-user-md"></i> عظام أطفال</p>
+          <p class="proj-desc">استشاري جراحة عظام الأطفال وعلاج التشوهات. عضو الجمعية الأوروبية والأكاديمية الأمريكية.</p>
+          <div class="proj-tags">
+            <span>SEO Content</span><span>IEO</span><span>Front-End</span>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; gap:16px;">
+            <a href="https://dr-mohamednabil.com/" target="_blank" class="proj-link"><i class="fas fa-external-link-alt"></i> زيارة الموقع</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Service Projects -->
+    <div id="proj-services" class="proj-panel">
+      <div class="projects-grid projects-grid-3">
+
+        <div class="proj-card" data-anim="fade-up" data-delay="0">
+          <div class="proj-image-container" style="width: 100%; height: 200px; border-radius: 12px; overflow: hidden; margin-bottom: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);">
+            <img src="images/almohamady.jpg" alt="مؤسسة المحمدي" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          </div>
+          <div class="proj-badge svc-badge">خدمات</div>
+          <h3>مؤسسة المحمدي</h3>
+          <p class="proj-client"><i class="fas fa-building"></i> شركة تكييف</p>
+          <p class="proj-desc">موقع لمؤسسة متخصصة في مقاولات التكييف والتبريد والميكانيكا.</p>
+          <div class="proj-tags">
+            <span>Local SEO</span><span>GEO</span><span>Front-End</span>
+          </div>
+          <a href="https://alm7mdy.com/" target="_blank" class="proj-link"><i class="fas fa-external-link-alt"></i> زيارة الموقع</a>
+        </div>
+
+        <div class="proj-card" data-anim="fade-up" data-delay="100">
+          <div class="proj-image-container" style="width: 100%; height: 200px; border-radius: 12px; overflow: hidden; margin-bottom: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);">
+            <img src="images/cleaning-service.jpg" alt="شركة تنظيف" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          </div>
+          <div class="proj-badge svc-badge">خدمات</div>
+          <h3>شركة نظافة</h3>
+          <p class="proj-client"><i class="fas fa-building"></i> شركة تنظيف شامل</p>
+          <p class="proj-desc">تصميم عصري وجذاب لخدمات التنظيف الشاملة مع تركيز على السرعة.</p>
+          <div class="proj-tags">
+            <span>WordPress</span><span>Local SEO</span><span>UI/UX</span>
+          </div>
+          <a href="#" class="proj-link"><i class="fas fa-external-link-alt"></i> زيارة الموقع</a>
+        </div>
+
+        <div class="proj-card" data-anim="fade-up" data-delay="200">
+          <div class="proj-image-container" style="width: 100%; height: 200px; border-radius: 12px; overflow: hidden; margin-bottom: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);">
+            <img src="images/maintenance-service.jpg" alt="شركة صيانة عامة" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          </div>
+          <div class="proj-badge svc-badge">خدمات</div>
+          <h3>شركة صيانة عامة</h3>
+          <p class="proj-client"><i class="fas fa-building"></i> صيانة منازل وشركات</p>
+          <p class="proj-desc">بوابة حجز خدمات الصيانة للمنازل والشركات بأداء عالي ومستقر.</p>
+          <div class="proj-tags">
+            <span>WordPress</span><span>SEO</span><span>Corporate</span>
+          </div>
+          <a href="#" class="proj-link"><i class="fas fa-external-link-alt"></i> زيارة الموقع</a>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- ══════════ VISION ══════════ -->
+<section class="vision-section">
+  <div class="container">
+    <div class="vision-inner">
+      <h2>ليه تختار <span>أحمد نادي؟</span></h2>
+      <p class="vision-desc">لأن الشغل الصح محتاج "صنيعية ديجيتال"! بدمج خبرتي في الـ Front-End مع أحدث تقنيات الـ SEO والـ GEO عشان أضاعف مبيعاتك وتصدرك، مش مجرد موقع شكله حلو وبس.</p>
+      <div class="vision-cards">
+        <div class="vision-card" data-anim="zoom">
+          <div class="vi"><i class="fas fa-rocket vi-anim-rocket"></i></div>
+          <h3>سرعة وأداء طلقة</h3>
+          <p>مش بنلزق قوالب وخلاص، بكتب (Clean Code) يخلي موقعك يحمل في لمح البصر وتجربة المستخدم (UI/UX) ولا أروع؛ لأن جوجل وعميلك مبيحبوش الانتظار.</p>
+        </div>
+        <div class="vision-card" data-anim="zoom">
+          <div class="vi"><i class="fas fa-search-dollar vi-anim-search"></i></div>
+          <h3>SEO و GEO متكلفة</h3>
+          <p>بنلعبها صح بأحدث أساليب الـ IEO والـ GEO. بنبني استراتيجية محتوى تمسك الكلمات المفتاحية وتخلي موقعك المرجع الأول لمحركات البحث والذكاء الاصطناعي.</p>
+        </div>
+        <div class="vision-card" data-anim="zoom">
+          <div class="vi"><i class="fas fa-heartbeat vi-anim-medical"></i></div>
+          <h3>صنعة المواقع الطبية YMYL</h3>
+          <p>عارفين المريض بيفكر إزاي. بنبني مواقع طبية ومحتوى بيمشي على مسطرة E-E-A-T، بيطمن المريض ويزود ثقته في دكتوره ويطير بمعدل الحجوزات في العالي.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FAQ ══════════ -->
+<section id="faq" class="faq-section">
+  <div class="container">
+    <div class="section-head" data-anim="fade-up">
+      <h2>الأسئلة الشائعة</h2>
+      <p>إجابات سريعة لأكثر الاستفسارات التي تهمك قبل بدء مشروعك</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item" data-anim="fade-up" data-delay="0">
+        <button class="faq-btn">كم يستغرق إنشاء موقع طبي متكامل؟<i class="fas fa-chevron-down"></i></button>
+        <div class="faq-answer"><div class="faq-answer-inner">يعتمد ذلك على حجم المشروع ومتطلباته، ولكن في المتوسط، يستغرق تصميم وتطوير موقع إلكتروني احترافي من أسبوعين إلى 4 أسابيع شاملة تهيئة محركات البحث (SEO) الأساسية.</div></div>
+      </div>
+      <div class="faq-item" data-anim="fade-up" data-delay="100">
+        <button class="faq-btn">متى أبدأ في رؤية نتائج من الـ SEO وزيادة في الحجوزات؟<i class="fas fa-chevron-down"></i></button>
+        <div class="faq-answer"><div class="faq-answer-inner">تحسين محركات البحث (SEO) هو استراتيجية طويلة المدى. عادة ما تبدأ النتائج الملحوظة في الظهور خلال 3 إلى 6 أشهر، ولكن بفضل تخصصي في مجالك، قد تلاحظ زيادة في الزيارات والاتصالات في وقت أسرع من ذلك.</div></div>
+      </div>
+      <div class="faq-item" data-anim="fade-up" data-delay="200">
+        <button class="faq-btn">هل تقدم دعماً فنياً أو صيانة للموقع بعد التسليم؟<i class="fas fa-chevron-down"></i></button>
+        <div class="faq-answer"><div class="faq-answer-inner">بالتأكيد، لا ينتهي عملي بمجرد تسليم الموقع. أقدم فترة دعم فني مجانية بعد التسليم للتأكد من أن كل شيء يعمل بكفاءة، كما أوفر باقات صيانة شهرية لحماية وتحديث الموقع باستمرار.</div></div>
+      </div>
+      <div class="faq-item" data-anim="fade-up" data-delay="300">
+        <button class="faq-btn">هل يجب أن أكتب المحتوى الطبي بنفسي؟<i class="fas fa-chevron-down"></i></button>
+        <div class="faq-answer"><div class="faq-answer-inner">يمكنك تزويدي بالمحتوى الخاص بك إذا كان جاهزاً، ولكن إذا لم يكن لديك الوقت فلا تقلق، فأنا أمتلك خبرة واسعة ككاتب محتوى (وخاصة المحتوى الطبي)، وسأقوم بكتابة محتوى دقيق، جذاب، ومتوافق تماماً مع قواعد الـ SEO لضمان تصدر موقعك.</div></div>
+      </div>
+      <div class="faq-item" data-anim="fade-up" data-delay="400">
+        <button class="faq-btn">كيف يتم تحديد تكلفة المشروع؟ وهل هناك دفعات؟<i class="fas fa-chevron-down"></i></button>
+        <div class="faq-answer"><div class="faq-answer-inner">يتم تحديد التكلفة بناءً على الميزات المطلوبة (عدد الصفحات، أنظمة الحجز). الميزة أنني أطرح باقات مرنة، والدفع يكون مقسماً على دفعات مريحة خلال فترة العمل على المشروع.</div></div>
+      </div>
+      <div class="faq-item" data-anim="fade-up" data-delay="500">
+        <button class="faq-btn">هل يمكن ربط الموقع بنظام حجز المواعيد أو الواتساب؟<i class="fas fa-chevron-down"></i></button>
+        <div class="faq-answer"><div class="faq-answer-inner">نعم.. يمكنني تصميم نظام حجز مواعيد إلكتروني متكامل داخل الموقع، بالإضافة إلى ربط الموقع بنظام الواتساب وأدوات التتبع مثل Google Analytics لمعرفة من أين يأتي زوارك.</div></div>
+      </div>
+      <div class="faq-item" data-anim="fade-up" data-delay="600">
+        <button class="faq-btn">كيف تضمن نجاح واستقرار مشروعي؟<i class="fas fa-chevron-down"></i></button>
+        <div class="faq-answer"><div class="faq-answer-inner">كل مشروع أبدأه يعتمد على خطة مميزة ودقيقة جداً، مبنية على مصادر موثوقة وتحليلات عميقة للسوق والمنافسين. أنا أؤمن بأن التخطيط المبني على البيانات هو الأساس لأي عمل ناجح ومستقر.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ TESTIMONIALS ══════════ -->
+<section id="testimonials" class="testimonials-section">
+  <div class="container">
+    <div class="section-head" data-anim="fade-up">
+      <h2>توصيات العملاء</h2>
+      <p>ماذا يقول الأطباء والعملاء عن مستوى العمل والنتائج</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card" data-anim="slide-up" data-delay="0">
+        <i class="fas fa-quote-right testi-quote-icon"></i>
+        <div class="testi-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="testi-body">"من أفضل مطوري المواقع ومتخصصي الـ SEO الذين تعاملت معهم. بعد استلام الموقع بشهرين، تصدرنا النتائج في معظم الكلمات الطبية المتعلقة بالعيادة."</p>
+        <div class="testi-client">
+          <div class="testi-avatar">د.أ</div>
+          <div class="testi-client-info">
+            <h4>د. أحمد محمود</h4>
+            <span>استشاري جراحة العظام</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card" data-anim="slide-up" data-delay="100">
+        <i class="fas fa-quote-right testi-quote-icon"></i>
+        <div class="testi-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="testi-body">"السرعة، الدقة، والتصميم العصري! حقق لنا أحمد ما كنا نبحث عنه بالضبط، ولاحظنا زيادة كبيرة في حجوزات الموقع بعد تحسين الـ SEO المحلي."</p>
+        <div class="testi-client">
+          <div class="testi-avatar">م.س</div>
+          <div class="testi-client-info">
+            <h4>مجدي سالم</h4>
+            <span>مدير مركز طبي</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card" data-anim="slide-up" data-delay="200">
+        <i class="fas fa-quote-right testi-quote-icon"></i>
+        <div class="testi-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="testi-body">"خبرة واضحة في معايير YMYL الطبية. أصبح التواجد الرقمي لعيادتنا موثوقاً ويحمل بصمة احترافية عالية جداً تقارع كبرى المستشفيات الخاصة."</p>
+        <div class="testi-client">
+          <div class="testi-avatar">د.س</div>
+          <div class="testi-client-info">
+            <h4>د. سارة فؤاد</h4>
+            <span>أخصائية تجميل وليزر</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CTA SECTION ══════════ -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-banner" data-anim="zoom-in">
+      <div class="cta-content">
+        <h2>هل موقعك جاهز <span>لتصدر النتائج؟</span></h2>
+        <p>لا تدع المنافسين يسيطرون على مرضاك. احصل على استشارة وفحص مجاني لموقعك الآن لتعرف أين تقف وكيف تنطلق للصدارة.</p>
+        <a href="#contact" class="cta-btn">
+          <span>احصل على فحص مجاني</span>
+          <i class="fas fa-arrow-left"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="section-head" data-anim="fade-up">
+      <h2>تواصل معي</h2>
+      <p>هل لديك مشروع؟ دعنا نبني شيئاً مميزاً معاً</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-cards">
+        <a href="https://www.instagram.com/ahmed_nady611" target="_blank" class="contact-card cc-ig" data-anim="fade-up" data-delay="0" data-tilt>
+          <div class="cc-icon" style="background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366)">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div class="cc-text">
+            <h4>إنستاغرام</h4>
+            <span>@ahmed_nady611</span>
+          </div>
+          <i class="fas fa-arrow-left cc-arrow"></i>
+        </a>
+        <a href="https://wa.me/01017029464" target="_blank" class="contact-card cc-wa" data-anim="fade-up" data-delay="100" data-tilt>
+          <div class="cc-icon" style="background:#25D366">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <div class="cc-text">
+            <h4>واتساب</h4>
+            <span>01017029464</span>
+          </div>
+          <i class="fas fa-arrow-left cc-arrow"></i>
+        </a>
+        <a href="mailto:lyfah7@gmail.com" class="contact-card cc-email" data-anim="fade-up" data-delay="200" data-tilt>
+          <div class="cc-icon" style="background:var(--red)">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="cc-text">
+            <h4>البريد الإلكتروني</h4>
+            <span>lyfah7@gmail.com</span>
+          </div>
+          <i class="fas fa-arrow-left cc-arrow"></i>
+        </a>
+      </div>
+      <!-- CTA panel -->
+      <div class="contact-cta-panel" data-anim="fade-left">
+        <div class="cta-panel-glow"></div>
+        <div class="cta-panel-content">
+          <div class="cta-icon-3d">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3>جاهز لإطلاق موقعك؟</h3>
+          <p>تواصل معي الآن واحصل على استشارة مجانية لمشروعك الرقمي</p>
+          <a href="https://wa.me/01017029464" target="_blank" class="btn-wa-big">
+            <i class="fab fa-whatsapp"></i>
+            ابدأ المشروع
+          </a>
+          <a href="mailto:lyfah7@gmail.com" class="btn-email-big">
+            <i class="fas fa-envelope"></i>
+            أرسل إيميل
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SOCIAL FOOTER ══════════ -->
+<section class="social-section">
+  <h3>تابعني على</h3>
+  <div class="social-links">
+    <a href="https://www.instagram.com/ahmed_nady611" class="ig" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/01017029464" class="wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="mailto:lyfah7@gmail.com" class="em" target="_blank"><i class="fas fa-envelope"></i></a>
+  </div>
+  <p class="copy">© 2025 <span>أحمد نادي</span> — جميع الحقوق محفوظة</p>
+</section>
+
+<script src="script.js?v=2"></script>
+
+  <!-- Protection Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => { 
+      document.body.style.userSelect = 'none'; 
+      document.body.style.webkitUserSelect = 'none'; 
+    });
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('dragstart', e => e.preventDefault());
+    document.addEventListener('selectstart', e => e.preventDefault());
+    document.addEventListener('keydown', e => { 
+      if(e.key === 'F12' || (e.ctrlKey && e.shiftKey && ['I','J','C'].includes(e.key)) || (e.ctrlKey && ['u','c','p','s'].includes(e.key))) {
+        e.preventDefault(); 
+      }
+    });
+  </script>
+
+  
+  <!-- Custom Cursor Script Optimized -->
+  <script>
+    if (!('ontouchstart' in window) && window.innerWidth > 768) {
+      document.head.insertAdjacentHTML('beforeend', `
+        <style>
+          .custom-cursor-wrapper { pointer-events: none; z-index: 999999; position: fixed; top:0; left:0; width:100%; height:100%; }
+          .custom-dot { position: absolute; width: 8px; height: 8px; background: #c41230; border-radius: 50%; opacity: 1; transition: opacity 0.3s; }
+          .custom-outline { position: absolute; width: 40px; height: 40px; border: 2px solid rgba(196,18,48,0.5); border-radius: 50%; opacity: 1; transition: opacity 0.3s, transform 0.15s ease-out; }
+          .custom-fade { opacity: 0 !important; }
+        </style>
+      `);
+      
+      const wrapper = document.createElement('div');
+      wrapper.className = 'custom-cursor-wrapper';
+      const dot = document.createElement('div');
+      dot.className = 'custom-dot';
+      const outline = document.createElement('div');
+      outline.className = 'custom-outline';
+      
+      wrapper.appendChild(outline);
+      wrapper.appendChild(dot);
+      document.body.appendChild(wrapper);
+      
+      let mx = 0, my = 0;
+      let ox = 0, oy = 0;
+      
+      window.addEventListener('mousemove', e => {
+        mx = e.clientX;
+        my = e.clientY;
+        dot.style.transform = `translate(${mx - 4}px, ${my - 4}px)`;
+      });
+      
+      function loop() {
+        ox += (mx - ox) * 0.2;
+        oy += (my - oy) * 0.2;
+        outline.style.transform = `translate(${ox - 20}px, ${oy - 20}px)`;
+        requestAnimationFrame(loop);
+      }
+      requestAnimationFrame(loop);
+
+      const bindHover = () => {
+        document.querySelectorAll('a, button, .img-box, .vision-card, .proj-card, .faq-btn, .team-card').forEach(el => {
+          if (!el.dataset.cbound) {
+            el.dataset.cbound = "1";
+            el.addEventListener('mouseenter', () => {
+              dot.classList.add('custom-fade');
+              outline.classList.add('custom-fade');
+            });
+            el.addEventListener('mouseleave', () => {
+              dot.classList.remove('custom-fade');
+              outline.classList.remove('custom-fade');
+            });
+          }
+        });
+      };
+      bindHover();
+      setInterval(bindHover, 2000);
+    }
+  </script>
+</body>
+</html>

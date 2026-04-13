@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>قصة العمل: جراحة العظام | أحمد نادي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .story-hero { background: linear-gradient(135deg, #0d0d0d, #1a0505); color: #fff; padding: 100px 0 60px; text-align: center; border-bottom: 4px solid #c41230; }
+    .story-hero h1 { color: #fff; font-size: 2.8rem; margin-bottom: 20px; font-weight: 800; }
+    .story-hero h1 span { color: #c41230; }
+    .story-hero p { font-size: 1.15rem; color: #ccc; max-width: 600px; margin: 0 auto; line-height: 1.8; }
+    .story-section { padding: 80px 0; background: #fafafa; }
+    .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 1100px; margin: 0 auto 70px; padding: 0 24px; }
+    .story-card { background: #fff; padding: 36px; border-radius: 20px; border-right: 4px solid #c41230; box-shadow: 0 10px 40px rgba(0,0,0,0.06); }
+    .story-card h3 { color: #0d0d0d; font-size: 1.4rem; margin-bottom: 18px; display: flex; align-items: center; gap: 12px; font-weight: 800; }
+    .story-card h3 i { color: #c41230; font-size: 1.6rem; }
+    .story-card p { color: #666; line-height: 1.9; font-size: 0.95rem; }
+    .before-after-box { max-width: 1000px; margin: 0 auto; background: #fff; border-radius: 24px; padding: 50px; box-shadow: 0 20px 60px rgba(0,0,0,0.08); text-align: center; }
+    .ba-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+    .img-box { background: #f5f5f5; border-radius: 16px; height: 380px; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; border: 2px dashed #ddd; transition: all 0.3s; cursor: pointer; }
+    .img-box:hover { border-color: #c41230; background: #fef5f6; }
+    .img-box img { width: 100%; height: 100%; object-fit: cover; opacity: 0.8; }
+    .img-box .placeholder-text { position: absolute; color: #888; font-weight: 700; font-size: 1.2rem; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+    .img-box .placeholder-text i { font-size: 2.5rem; color: #ddd; }
+    .img-box:hover .placeholder-text i { color: #c41230; }
+    .img-label { font-size: 1.3rem; font-weight: 800; margin-bottom: 16px; display: block; color: #0d0d0d; }
+    .img-label.after { color: #c41230; }
+    .back-btn { display: inline-flex; align-items: center; gap: 10px; background: #c41230; color: #fff; padding: 14px 34px; border-radius: 50px; text-decoration: none; font-weight: 700; margin-top: 50px; transition: 0.3s; font-size: 1.05rem; }
+    .back-btn:hover { background: #8b0000; transform: translateY(-4px); box-shadow: 0 10px 25px rgba(196,18,48,0.4); }
+    @media(max-width: 768px) {
+      .story-grid, .ba-grid { grid-template-columns: 1fr; }
+      .img-box { height: 280px; }
+    }
+    .image-modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.85); align-items: center; justify-content: center; backdrop-filter: blur(8px); }
+    .image-modal .modal-content { margin: auto; display: block; max-width: 90%; max-height: 90vh; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); animation: zoomModal 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    .image-modal .close-modal { position: absolute; top: 20px; right: 40px; color: #fff; font-size: 50px; font-weight: 300; transition: 0.3s ease; cursor: pointer; z-index: 1001; }
+    .image-modal .close-modal:hover { color: #c41230; transform: scale(1.1) rotate(90deg); }
+    @keyframes zoomModal { from { transform: scale(0.85); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+  </style>
+</head>
+<body>
+
+  <header class="story-hero">
+    <div class="container">
+      <h1>قصة عمل: <span>جراحة العظام</span></h1>
+      <p>من عيادة محلية إلى تصدر نتائج البحث وزيادة الحجوزات بنسبة 200٪</p>
+    </div>
+  </header>
+
+  <section class="story-section">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-card">
+          <h3><i class="fas fa-exclamation-triangle"></i> التحدي وكيف بدأنا</h3>
+          <p>كان الموقع القديم بطيئاً، وواجه المرضى صعوبة في العثور على معلومات حول جراحات المفاصل وإصابات الملاعب. كما استحوذ المنافسون على نتائج البحث في المنطقة.</p>
+        </div>
+        <div class="story-card">
+          <h3><i class="fas fa-check-circle"></i> الحل والإنجاز</h3>
+          <p>بناء موقع طبي عالي الأداء يبرز خبرة الطبيب. قمنا بتحسين الـ SEO المحلي لاستهداف كلمات مفتاحية دقيقة لآلام العظام والمفاصل، مما أدى لزيادة حجوزات العيادة بنسبة 200%.</p>
+        </div>
+      </div>
+
+      <div class="before-after-box">
+        <h2 style="margin-bottom: 10px; font-size: 2.2rem; font-weight: 800;">مقارنة التطور بالأرقام والصور</h2>
+        <p style="color: #666; max-width: 600px; margin: 0 auto;">ضغطة بسيطة يمكنك إضافة صور قبل وبعد لتبين مدى التحسن في التصميم وفي إحصائيات جوجل.</p>
+        
+        <div class="ba-grid">
+          <div>
+            <span class="img-label">قبل (Before)</span>
+            <div class="img-box" onclick="openModal('images/karim-samir-before.png')">
+              <img src="images/karim-samir-before.png" alt="تصميم دكتور كريم سمير القديم">
+            </div>
+          </div>
+          <div>
+            <span class="img-label after">بعد (After)</span>
+            <div class="img-box" style="border-color: #c41230; background: #fef5f6;" onclick="openModal('images/karim-samir-after.png')">
+              <img src="images/karim-samir-after.png" alt="تصميم دكتور كريم سمير الجديد">
+            </div>
+          </div>
+        </div>
+        
+        <a href="index.html#projects" class="back-btn"><i class="fas fa-arrow-right"></i> العودة للمشاريع المميزة</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="image-modal" class="image-modal" onclick="closeModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modal-img">
+  </div>
+
+  <script>
+    function openModal(src) {
+      document.getElementById('image-modal').style.display = 'flex';
+      document.getElementById('modal-img').src = src;
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal() {
+      document.getElementById('image-modal').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+  </script>
+
+  <!-- Protection Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => { 
+      document.body.style.userSelect = 'none'; 
+      document.body.style.webkitUserSelect = 'none'; 
+    });
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('dragstart', e => e.preventDefault());
+    document.addEventListener('selectstart', e => e.preventDefault());
+    document.addEventListener('keydown', e => { 
+      if(e.key === 'F12' || (e.ctrlKey && e.shiftKey && ['I','J','C'].includes(e.key)) || (e.ctrlKey && ['u','c','p','s'].includes(e.key))) {
+        e.preventDefault(); 
+      }
+    });
+  </script>
+
+  
+  <!-- Custom Cursor Script Optimized -->
+  <script>
+    if (!('ontouchstart' in window) && window.innerWidth > 768) {
+      document.head.insertAdjacentHTML('beforeend', `
+        <style>
+          .custom-cursor-wrapper { pointer-events: none; z-index: 999999; position: fixed; top:0; left:0; width:100%; height:100%; }
+          .custom-dot { position: absolute; width: 8px; height: 8px; background: #c41230; border-radius: 50%; opacity: 1; transition: opacity 0.3s; }
+          .custom-outline { position: absolute; width: 40px; height: 40px; border: 2px solid rgba(196,18,48,0.5); border-radius: 50%; opacity: 1; transition: opacity 0.3s, transform 0.15s ease-out; }
+          .custom-fade { opacity: 0 !important; }
+        </style>
+      `);
+      
+      const wrapper = document.createElement('div');
+      wrapper.className = 'custom-cursor-wrapper';
+      const dot = document.createElement('div');
+      dot.className = 'custom-dot';
+      const outline = document.createElement('div');
+      outline.className = 'custom-outline';
+      
+      wrapper.appendChild(outline);
+      wrapper.appendChild(dot);
+      document.body.appendChild(wrapper);
+      
+      let mx = 0, my = 0;
+      let ox = 0, oy = 0;
+      
+      window.addEventListener('mousemove', e => {
+        mx = e.clientX;
+        my = e.clientY;
+        dot.style.transform = `translate(${mx - 4}px, ${my - 4}px)`;
+      });
+      
+      function loop() {
+        ox += (mx - ox) * 0.2;
+        oy += (my - oy) * 0.2;
+        outline.style.transform = `translate(${ox - 20}px, ${oy - 20}px)`;
+        requestAnimationFrame(loop);
+      }
+      requestAnimationFrame(loop);
+
+      const bindHover = () => {
+        document.querySelectorAll('a, button, .img-box, .vision-card, .proj-card, .faq-btn, .team-card').forEach(el => {
+          if (!el.dataset.cbound) {
+            el.dataset.cbound = "1";
+            el.addEventListener('mouseenter', () => {
+              dot.classList.add('custom-fade');
+              outline.classList.add('custom-fade');
+            });
+            el.addEventListener('mouseleave', () => {
+              dot.classList.remove('custom-fade');
+              outline.classList.remove('custom-fade');
+            });
+          }
+        });
+      };
+      bindHover();
+      setInterval(bindHover, 2000);
+    }
+  </script>
+</body>
+</html>
